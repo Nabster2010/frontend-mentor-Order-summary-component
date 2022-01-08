@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | NFT preview card component</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              PaleBlue: "hsl(225, 100%, 94%)",
+              BrightBlue: "hsl(245, 75%, 52%)",
+              VeryBaleBlue: "hsl(225, 100%, 98%)",
+              DesaturatedBlue: "hsl(224, 23%, 55%)",
+              DarkBlue: "hsl(223, 47%, 23%)",
+            },
+            backgroundImage: {
+              desktop: "url('/images/pattern-background-desktop.svg')",
+              mobile: "url('/images/pattern-background-mobile.svg')",
+            },
+            boxShadow: {
+            '3xl': '0px 10px 20px 0px rgba(114,128,167,0.75)'
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Red Hat Display", sans-serif;
+        display: flex;
+        justify-content: center;
+     
+        background-image: url("/images/pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: hsl(225, 100%, 94%);
+      }
+      @media (max-width: 375px) {
+        body {
+          background-image: url("/images/pattern-background-mobile.svg");
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="my-8 max-w-xs mx-2  ">
+      <div class="w-sm shadow-3xl  bg-white rounded-2xl pb-6">
+        <div class="wrapper w-full overflow-hidden rounded-t-2xl">
+          <img
+            class="w-full"
+            src="./images/illustration-hero.svg"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div class="px-8 pt-4 flex flex-col items-center justify-center space-y-3 text-center mt-4">
+          <h1 class="text-xl font-bold text-DarkBlue">Order Summary</h1>
+          <p class="text-xs text-DarkBlue/50 ">
+            you can listen to millions of songs,</br> audiobooks and podcast on any
+            device any where you like.
+          </p>
+        </div>
+        <div class="subscription-plans mx-8 bg-gray-50  flex justify-between rounded-xl p-3 my-4 ">
+          <div class="flex justify-center items-center ">
+            <div >
+              <img src="./images/icon-music.svg" class="w-9" />
+            </div>
+            <div class="pl-2" >
+              <p class="text-DarkBlue text-xs font-extrabold ">Annual Plan</p>
+              <p class="text-xs text-DarkBlue/50">$59.99/year</p>
+            </div>
+          </div>
+          <button class="text-BrightBlue text-xs font-medium underline hover:no-underline hover:text-BrightBlue/80 ">Change</button>
+        </div>
+        <div class="action-btns flex flex-col mx-8 space-y-3 mb-4">
+          <button class="bg-BrightBlue py-2 rounded-lg text-white text-sm mb-4 shadow-3xl hover:bg-BrightBlue/80  ">Procced to Payment</button>
+          <button class="text-xs font-semibold text-DarkBlue/70 hover:text-DarkBlue   " >Cancel Order </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
