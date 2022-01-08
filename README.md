@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [github repo](https://github.com/Nabster2010/frontend-mentor-NFT-card-component)
-- Live Site URL: [live site](https://nabster2010.github.io/frontend-mentor-NFT-card-component/)
+- Solution URL: [github repo](https://github.com/Nabster2010/frontend-mentor-Order-summary-component)
+- Live Site URL: [live site](https://nabster2010.github.io/frontend-mentor-Order-summary-component/)
 
 ## My process
 
